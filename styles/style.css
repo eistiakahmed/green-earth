@@ -1,0 +1,29 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+.banner-container {
+  background-image: url('../assets/hero-leaf1.png'),
+    url('../assets/hero-leaf2.png');
+  background-position: left bottom, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 450px, 450px;
+  min-height: 100px;
+}
+
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .banner-container {
+    background-image: none;
+  }
+
+  br{
+    display: none;
+  }
+}
+
+
