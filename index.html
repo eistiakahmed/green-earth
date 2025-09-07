@@ -1,104 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Green Earth</title>
-  <!-- Tailwind and daisyUI cdn -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <!-- CSS link -->
-  <link rel="stylesheet" href="./styles/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Earth</title>
+    <!-- Tailwind and daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet"
+      type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
 
-<body>
-  <header>
-    <!-- navbar section -->
-    <div class="navbar bg-[#15803D] shadow-sm">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
+  <body>
+    <header>
+      <!-- navbar section -->
+      <div class="navbar bg-[#15803D] shadow-sm">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button"
+              class="btn btn-ghost lg:hidden text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
+                fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+              <li><a>About</a></li>
+              <li><a>Gallery</a></li>
+              <li><a>Plant a Tree</a></li>
+            </ul>
           </div>
-          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+          <h1 class="btn-ghost text-xl text-white md:ml-20">Green Earth</h1>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-white">
             <li><a>About</a></li>
             <li><a>Gallery</a></li>
             <li><a>Plant a Tree</a></li>
           </ul>
         </div>
-        <h1 class="btn-ghost text-xl text-white md:ml-20">Green Earth</h1>
-      </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1 text-white">
-          <li><a>About</a></li>
-          <li><a>Gallery</a></li>
-          <li><a>Plant a Tree</a></li>
-        </ul>
-      </div>
-      <div class="navbar-end">
-        <button
-          class="btn border-none bg-[#FACC15] text-[#15803D] rounded-full md:mr-28 shadow-none hover:bg-[#f1da74]">Plant
-          a
-          Tree</button>
-      </div>
-    </div>
-    <!-- banner section -->
-    <section class="banner-container bg-[#cff0dc]">
-      <div class="flex flex-col justify-center items-center min-h-[290px] md:min-h-[383px] space-y-3">
-        <h2 class="font-bold text-3xl md:text-5xl text-center">Plant a Tree, Grow a Future</h2>
-        <p class="text-center mb-6">Join our mission to plant 1 million trees and make the Earth greener for future <br>
-          generations.</p>
-        <button class="btn border-none bg-[#FACC15] text-[#15803D] rounded-full shadow-none hover:bg-[#f1da74]">Get
-          Involved</button>
-      </div>
-    </section>
-  </header>
-
-  <main>
-    <!-- Choose Your Trees -->
-    <section class="pt-17 bg-[#f0fcf4] pb-17 ">
-      <h3 class="text-center pb-5 text-[32px] font-semibold">Choose Your Trees</h3>
-      <div class="  grid grid-cols-12 w-11/12 mx-auto gap-4">
-        <div class="col-span-2">
-          <h3 class="font-semibold mb-1">Categories</h3>
-          <ul>
-            <li class="font-medium hover:bg-[#14803c] hover:text-white p-2 rounded-lg text-sm">All Trees</li>
-          </ul>
-          <div id="categories-container">
-            
-          </div>
+        <div class="navbar-end">
+          <button
+            class="btn border-none bg-[#FACC15] text-[#15803D] rounded-full md:mr-28 shadow-none hover:bg-[#f1da74]">Plant
+            a
+            Tree</button>
         </div>
-        <div class="col-span-8 grid grid-cols-3 gap-5">
-          <div class="bg-white  p-5 min-h-[360px] rounded-xl">
-            <!-- <img src="" alt=""> -->
-            <div class="bg-gray-400 h-32 rounded-2xl">Image</div>
-            <h3 class="mt-3 font-semibold">Mango Tree</h3>
-            <p class="text-sm text-gray-600">A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its
-              dense green</p>
-            <div class="flex justify-between items-center mt-3 mb-3 ">
-              <div class="bg-[#dcfce7] text-green-500 p-2 rounded-full w-20">
-                <p class="text-sm">Fruit Tree</p>
-              </div>
-              <div>
-                <span class="font-bold">৳500</span>
-              </div>
+      </div>
+      <!-- banner section -->
+      <section class="banner-container bg-[#cff0dc]">
+        <div
+          class="flex flex-col justify-center items-center min-h-[290px] md:min-h-[383px] space-y-3">
+          <h2 class="font-bold text-3xl md:text-5xl text-center">Plant a Tree,
+            Grow a Future</h2>
+          <p class="text-center mb-6">Join our mission to plant 1 million trees
+            and make the Earth greener for future <br>
+            generations.</p>
+          <button
+            class="btn border-none bg-[#FACC15] text-[#15803D] rounded-full shadow-none hover:bg-[#f1da74]">Get
+            Involved</button>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- Choose Your Trees -->
+      <section class="pt-17 bg-[#f0fcf4] pb-17 ">
+        <h3 class="text-center pb-5 text-[32px] font-semibold">Choose Your
+          Trees</h3>
+        <div class="  grid grid-cols-12 w-11/12 mx-auto gap-4">
+          <!-- Categories section -->
+          <div class="col-span-2">
+            <h3 class="font-semibold mb-1">Categories</h3>
+            <ul>
+              <li id="all-tree-btn" class="font-medium hover:bg-[#14803c] hover:text-white p-2 rounded-lg text-sm all-categories">All
+                Trees</li>
+            </ul>
+            <div id="categories-container">
+
             </div>
-            <button class="btn w-full border-none rounded-full bg-[#14803c] text-white font-medium mt-1">Add to Card</button>
+          </div>
+          <!-- card section -->
+          <div id="cardContainer" class="col-span-8 grid grid-cols-3 gap-5">
+           
+          </div>
+          <!-- Add to card section -->
+          <div class="bg-white col-span-2 rounded-xl">
+            <h3 class="p-4 font-semibold ">Your Cart</h3>
           </div>
         </div>
-        <div class="bg-white col-span-2 rounded-xl">
-          <h3 class="p-4 font-semibold ">Your Cart</h3>
-        </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-
-  <script src="./script/index.js"></script>
-</body>
+    <script src="./script/index.js"></script>
+  </body>
 
 </html>
