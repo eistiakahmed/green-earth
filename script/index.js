@@ -1,12 +1,4 @@
-// const addToCardBtn = document.getElementsByClassName("addToCard-btn")
-
-// for(const btn of addToCardBtn){
-//   btn.addEventListener("click", e => {
-//     e.preventDefault()
-//     console.log(e.target)
-//   }
-//   )
-// }
+const modalContainer = document.getElementById("modal-container")
 
 const categoriesLoad = () => {
   const url = 'https://openapi.programming-hero.com/api/categories';
@@ -76,7 +68,7 @@ const allTreeDisplay = (trees) => {
               <img src="${tree.image}" alt class="h-60 rounded-2xl w-full">
 
               <div id="${tree.id}" class="flex-1">
-                <h3 class="mt-3 font-semibold">${tree.name}</h3>
+                <h3 onclick="viewModal(${tree.id})" class="mt-3 font-semibold cursor-pointer">${tree.name}</h3>
                 <p class="text-sm text-gray-600">${tree.description}</p>
               </div>
               <div class="flex justify-between items-center my-2">
@@ -97,13 +89,6 @@ const allTreeDisplay = (trees) => {
 
     cardContainer.append(div);
 
-    // const addToCardBtn = div.querySelector(".addToCard-btn");
-    // addToCardBtn.addEventListener("click", e => {
-    //   console.log(e.target);
-    //   const price =
-    //   console.log(price)
-
-    // });
   });
 };
 
@@ -157,7 +142,7 @@ const showAddCarts = (cart) => {
               <h3 class="text-gray-400">৳ <span>${addCart.price}</span> x <span>1</span></h3>
               </div>
               <div class="text-gray-400">
-                <i onclick="handleAddCartDelete('${addCart.id}')" class="fa-solid fa-xmark  font-light"></i>
+                <i onclick="handleAddCartDelete('${addCart.id}')" class="fa-solid fa-xmark  font-light cursor-pointer"></i>
               </div>
     </div>
     
@@ -172,24 +157,23 @@ const loadTreeByCategory = (categoryId) => {
     .then((data) => loadTreeByCategoryShow(data.plants));
 };
 
+
+
 const loadTreeByCategoryShow = (cardInfo) => {
-  // console.log(cardInfo);
   const cardContainer = document.getElementById('cardContainer');
   cardContainer.innerHTML = '';
   cardInfo.forEach((card) => {
-    console.log(card);
     const div = document.createElement('div');
     div.innerHTML = `
      <div class="bg-white p-5 h-full rounded-xl flex flex-col">
               <img src="${card.image}" alt class="h-60 rounded-2xl w-full">
 
               <div id="${card.id}" class="flex-1">
-                <h3 class="mt-3 font-semibold">${card.name}</h3>
+                <h3 onclick="viewModal(${card.id})" class="mt-3 font-semibold cursor-pointer">${card.name}</h3>
                 <p class="text-sm text-gray-600">${card.description}</p>
               </div>
               <div class="flex justify-between items-center my-2">
-                  <div
-                    class="bg-[#dcfce7] text-green-500 px-3 py-1 rounded-full">
+                  <div class="bg-[#dcfce7] text-green-500 px-3 py-1 rounded-full">
                     <p class="text-sm">${card.category}</p>
                   </div>
                   <h3 class="font-bold">৳<span>${card.price}</span></h3>
@@ -202,14 +186,32 @@ const loadTreeByCategoryShow = (cardInfo) => {
               </div>
             </div>
     `;
-
     cardContainer.append(div);
-    // const addToCardBtn = div.querySelector(".addToCard-btn");
-    // addToCardBtn.addEventListener("click", e => {
-    //   console.log(e.target);
-
-    // });
   });
 };
+
+const viewModal = (modalId) => { 
+  const url = `https://openapi.programming-hero.com/api/plant/${modalId}`;
+  fetch(url)
+    .then(res => res.json())
+    .then(data => displayModal(data.plants))  
+}
+
+const displayModal = (plant) => { 
+  modalContainer.innerHTML = `
+ <div class="space-y-3" >
+  <h3 class="font-bold text-xl">${plant.name}</h3>
+  <img src="${plant.image}" alt="" class="w-full h-80 rounded-lg">
+  <p class="font-bold">Price : ৳ <span>${plant.price}</span></p>
+  <div class="border-2 border-green-500 text-green-500 p-2 w-1/3 text-center  rounded-2xl">
+  <p class="font-medium">Category: ${plant.category}</p>
+  </div>
+  <p>${plant.description}</p>
+ </div>
+  `;
+  document.getElementById("modal").showModal();
+}
+
+
 
 allTreeLoad();
