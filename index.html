@@ -1,128 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Green Earth</title>
-    <!-- Tailwind and daisyUI cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet"
-      type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- CSS link -->
-    <link rel="stylesheet" href="./styles/style.css">
-    <!-- font awesome cdn -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Earth</title>
+  <!-- Tailwind and daisyUI cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- CSS link -->
+  <link rel="stylesheet" href="./styles/style.css">
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-  <body>
-    <header>
-      <!-- navbar section -->
-      <div class="navbar bg-[#15803D] shadow-sm">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button"
-              class="btn btn-ghost lg:hidden text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
-                fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
-            </div>
-            <ul tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-              <li><a>About</a></li>
-              <li><a>Gallery</a></li>
-              <li><a>Plant a Tree</a></li>
-            </ul>
+<body>
+  <header>
+    <!-- navbar section -->
+    <div class="navbar bg-[#15803D] shadow-sm">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
           </div>
-          <h1 class="btn-ghost text-xl text-white md:ml-20">Green Earth</h1>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 text-white">
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
             <li><a>About</a></li>
             <li><a>Gallery</a></li>
             <li><a>Plant a Tree</a></li>
           </ul>
         </div>
-        <div class="navbar-end">
-          <button
-            class="btn border-none bg-[#FACC15] text-[#15803D] rounded-full md:mr-28 shadow-none hover:bg-[#f1da74]">Plant
-            a
-            Tree</button>
-        </div>
+        <h1 class="btn-ghost text-xl text-white md:ml-20">Green Earth</h1>
       </div>
-      <!-- banner section -->
-      <section class="banner-container bg-[#cff0dc]">
-        <div
-          class="flex flex-col justify-center items-center min-h-[290px] md:min-h-[383px] space-y-3">
-          <h2 class="font-bold text-3xl md:text-5xl text-center">Plant a Tree,
-            Grow a Future</h2>
-          <p class="text-center mb-6">Join our mission to plant 1 million trees
-            and make the Earth greener for future <br>
-            generations.</p>
-          <button
-            class="btn border-none bg-[#FACC15] text-[#15803D] rounded-full shadow-none hover:bg-[#f1da74]">Get
-            Involved</button>
-        </div>
-      </section>
-    </header>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 text-white">
+          <li><a>About</a></li>
+          <li><a>Gallery</a></li>
+          <li><a>Plant a Tree</a></li>
+        </ul>
+      </div>
 
-    <main>
-      <!-- Choose Your Trees -->
-      <section class="pt-17 bg-[#f0fcf4] pb-17 ">
-        <h3 class="text-center pb-5 text-[32px] font-semibold">Choose Your
-          Trees</h3>
-        <div class="  grid grid-cols-12 w-11/12 mx-auto gap-4">
-          <!-- Categories section -->
-          <div class="col-span-2">
-            <h3 class="font-semibold mb-1">Categories</h3>
-            <ul>
-              <li id="all-tree-btn" class="font-medium hover:bg-[#14803c] hover:text-white p-2 rounded-lg text-sm all-categories cursor-pointer">All
-                Trees</li>
-            </ul>
-            <div id="categories-container">
+      <div class="navbar-end">
+        <button
+          class="btn border-none bg-[#FACC15] text-[#15803D] rounded-full md:mr-28 shadow-none hover:bg-[#f1da74]">Plant
+          a
+          Tree</button>
+      </div>
+    </div>
+    <!-- banner section -->
+    <section class="banner-container bg-[#cff0dc]">
+      <div class="flex flex-col justify-center items-center min-h-[290px] md:min-h-[383px] space-y-3">
+        <h2 class="font-bold text-3xl md:text-5xl text-center">Plant a Tree,
+          Grow a Future</h2>
+        <p class="text-center mb-6">Join our mission to plant 1 million trees
+          and make the Earth greener for future <br>
+          generations.</p>
+        <button class="btn border-none bg-[#FACC15] text-[#15803D] rounded-full shadow-none hover:bg-[#f1da74]">Get
+          Involved</button>
+      </div>
+    </section>
+  </header>
 
-            </div>
-          </div>
-          <!-- card section -->
-           <!-- Open the modal using ID.showModal() method -->
-<!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
-<dialog id="modal" class="modal modal-bottom sm:modal-middle">
-  <div class="modal-box">
-    <div id="modal-container">
-      
-    </div>
-    <div class="modal-action">
-      <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close</button>
-      </form>
-    </div>
-  </div>
-</dialog>
-          <div id="cardContainer" class="col-span-8 grid grid-cols-3 gap-5">
-           
-          </div>
-          <!-- Add to card section -->
-          <div class="bg-white col-span-2 rounded-xl">
-            <h3 class="p-4 font-semibold ">Your Cart</h3>
-            <div id="addCartContainer">
-             
-            </div>
-              <div class="flex justify-between items-center border-t-2 border-gray-300 pt-2 mx-4">
-              <h1>Total: </h1>
-              <h3>৳<span>1000</span></h3>
-            </div>
-            </div>
-            
+  <main>
+    <!-- Choose Your Trees -->
+     <section id="spinner" class="flex justify-center items-center py-6 hidden">
+     <span class="loading loading-bars loading-xl"></span>
+     </section>
+    <section class="pt-17 bg-[#f0fcf4] pb-17 ">
+      <h3 class="text-center pb-5 text-[32px] font-semibold">Choose Your
+        Trees</h3>
+      <div class="flex flex-col-reverse md:grid md:grid-cols-12 w-11/12 mx-auto gap-4 ">
+        <!-- Categories section -->
+        <div class="col-span-2 order-2 md:order-1">
+          <h3 class="font-semibold mb-1">Categories</h3>
+          <ul>
+            <li id="all-tree-btn"
+              class="font-medium hover:bg-[#14803c] hover:text-white p-2 rounded-lg text-sm all-categories cursor-pointer">
+              All
+              Trees</li>
+          </ul>
+          <div id="categories-container">
+
           </div>
         </div>
-      </section>
-    </main>
+        <!-- modal section -->
+        <dialog id="modal" class="modal modal-bottom sm:modal-middle">
+          <div class="modal-box">
+            <div id="modal-container">
 
-    <script src="./script/index.js"></script>
-  </body>
+            </div>
+            <div class="modal-action">
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+        <!-- card section -->
+        <div id="cardContainer" class="col-span-8 grid md:grid-cols-3 gap-5 order-1 md:order-2">
+
+        </div>
+        <!-- Add to card section -->
+        <div class="bg-white col-span-2 rounded-xl order-3 md:order-3">
+          <h3 class="p-4 font-semibold ">Your Cart</h3>
+          <div id="addCartContainer">
+
+          </div>
+
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./script/index.js"></script>
+</body>
 
 </html>
