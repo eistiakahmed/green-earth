@@ -11,6 +11,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- CSS link -->
     <link rel="stylesheet" href="./styles/style.css">
+    <!-- font awesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 
   <body>
@@ -77,7 +79,7 @@
           <div class="col-span-2">
             <h3 class="font-semibold mb-1">Categories</h3>
             <ul>
-              <li id="all-tree-btn" class="font-medium hover:bg-[#14803c] hover:text-white p-2 rounded-lg text-sm all-categories">All
+              <li id="all-tree-btn" class="font-medium hover:bg-[#14803c] hover:text-white p-2 rounded-lg text-sm all-categories cursor-pointer">All
                 Trees</li>
             </ul>
             <div id="categories-container">
@@ -91,6 +93,15 @@
           <!-- Add to card section -->
           <div class="bg-white col-span-2 rounded-xl">
             <h3 class="p-4 font-semibold ">Your Cart</h3>
+            <div id="addCartContainer">
+             
+            </div>
+              <div class="flex justify-between items-center border-t-2 border-gray-300 pt-2 mx-4">
+              <h1>Total: </h1>
+              <h3>৳<span>1000</span></h3>
+            </div>
+            </div>
+            
           </div>
         </div>
       </section>
