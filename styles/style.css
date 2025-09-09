@@ -18,7 +18,7 @@
 /* Mobile responsive */
 @media (max-width: 768px) {
   .banner-container {
-    background-image: none;
+    background-size: 150px, 150px;
   }
 
   br{

@@ -1,167 +1,24 @@
-## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-006
 
-### 📅 Deadline For 60 marks: 9th September, 2025 (11:59 pm ⏱️)
+####  Create a README file to answer the following question-
 
-### 📅 Deadline For 50 marks : 13th September , 2025 (6:00 pm⏱️)
+1. What is the difference between var, let, and const?
 
-### 📅 Deadline For 30 marks: Any time after 13the September , 2025 (6:01 pm⏱️).
+2. What is the difference between map(), forEach(), and filter()? 
 
----
-# Green Earth
+3. What are arrow functions in ES6?
 
+4. How does destructuring assignment work in ES6?
 
-## Private Repository: https://classroom.github.com/a/nVZrg5R9 
+5. Explain template literals in ES6. How are they different from string concatenation?
 
-## Alternative Private Repository: https://classroom.github.com/a/KCGI14ST 
 
+### Answer ---->
+1. The difference between var, let, and const is in three things reassignment, scope, and redeclaration. var can be redeclared and reassigned. It works outside the scope too, but the output is undefined. It can be accessed anywhere inside the parent function. let cannot be redeclared but can be reassigned. const cannot be redeclared or reassigned. let and const have a Temporal Dead Zone, so accessing them outside gives an error. They cannot be called outside a function. For const, the values inside an object or array can be changed, but the variable itself cannot be reassigned.
 
----
-🌴 API Endpoints
----
-1. Get 🌴All Plants
-```bash
-https://openapi.programming-hero.com/api/plants
-```
+2. The difference between map(), forEach(), and filter() is  map() returns a new array, forEach() does not return anything, and filter() returns a new array containing only the elements that meet a certain condition.
 
-2. Get 🌴All categories <br/>
-```bash
-https://openapi.programming-hero.com/api/categories
-```
+3. Arrow functions are a new feature in ES6. They allow writing short functions without needing the return keyword for single-line expressions, making the code more readable. If there is only a single parameter, parentheses are not required. Arrow functions do not have their own arguments object.if access to arguments is needed, rest parameters (...args) should be used.
 
+4. Destructuring assignment is a new ES6 feature.It helps to take values from arrays or objects.You can put them into variables in one line.For arrays use [] and for objects use {}.This makes the code shorter and readable.
 
-3. Get 🌴plants by categories <br/>
-```bash
-https://openapi.programming-hero.com/api/category/${id}
-```
-
-```bash
-https://openapi.programming-hero.com/api/category/1
-```
-
-4. Get 🌴Plants Detail <br/>
-
-```bash
-https://openapi.programming-hero.com/api/plant/${id}
-```
-
-```bash
-https://openapi.programming-hero.com/api/plant/1
-```
----
-
-
-
-
-## ✅ Main Requirements 
-
-#### 1) Navbar
-
-- Website **logo/name** on the **left**  
-- **Menu items** in the **center** 
-- **Plant a Tree button** on the **right** 
-
-#### 2) Banner 
-- A **background image**  
-- A **title** and **subtitle**  
-- A **centered button**  
-
-#### 3) About Campaign
-- **Section heading**  
-- **Image on the left**, **text on the right**  
-
-#### 4) Our Impact Section 
-- Show **3 cards** with campaign **statistics**  
-
-#### 5) Plant a Tree Today Section & Footer
-- **Form**: Name, Email, Number of Trees  
-- **Footer** with copyright info 
-
-#### 6) Responsiveness 
-- Website must be **mobile responsive**  
-
----
-#### 7) Create a README file to answer the following question-
-
-
-#### 1) What is the difference between var, let, and const?
-
-#### 2) What is the difference between map(), forEach(), and filter()? 
-
-#### 3) What are arrow functions in ES6?
-
-#### 4) How does destructuring assignment work in ES6?
-
-#### 5) Explain template literals in ES6. How are they different from string concatenation?
-
-## ⚙️ Functionalities 
-
-1) Category Loading 
-Load Tree Categories dynamically on the left side.
-
-2) Category Click → Tree Data 
-On clicking a category: load trees of that category.
-
-Display in a 3-column card layout.
-
-3) Card Contents 
- Each card includes:
-
-        - Image
-
-        -  Name
-
-        - Short description
-
-        - Category
-
-        - Price
-
-        - Add to Cart button
-
-4) Modal on Card Click 
-Clicking a tree name on a card opens a modal with full tree details.
-
-
-##  🧪 Challenges 
-
-
-    1) Add to Cart 
-    Clicking Add to Cart: - Adds the tree to Cart List
-                          - Shows tree name 
-
-    2) Total Calculation 
-    Calculate total price of trees in cart.
-
-    3) Remove from Cart 
-    Clicking ❌ removes tree and deducts price from total.
-
-    4) Loading Spinner
-    Show spinner while data is loading.
-
-    5) Active Button State 
-    Highlight active category button when selected.
-
-
-
-🧰 Technology Stack:
-        
-        HTML
-
-        CSS (Vanilla / Tailwind / DaisyUI)
-
-        JavaScript (Vanilla only, no frameworks)
-
-📌 Rules
-✅ At least 5 meaningful commits
-
-❌ No dummy text or Lorem Ipsum — must use relevant content
-
-
-
-
-
-## 🔗 Submission
-- **Live Link :** YOUR_DEPLOYED_URL_HERE  
-- **GitHub Private Repository:** YOUR_REPO_URL_HERE  
-
----
+5. Template literals are an ES6 feature that makes writing code easier.You use dollar sign and curly braces ${} to include variables or expressions inside strings.This avoids using extra + for string concatenation.It also solves problems with single and double quotes inside strings.Long strings can be written across multiple lines without extra work.They are very useful when creating dynamic strings.
