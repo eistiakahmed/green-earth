@@ -32,7 +32,7 @@ const displayModal = (plant) => {
   <p class="font-medium"> ${plant.category}</p>
   </div>
   <p class="font-bold">Price : ৳ <span>${plant.price}</span></p>
-  <p>${plant.description}</p>
+  <p class="text-gray-500 text-sm">${plant.description}</p>
  </div>
   `;
   document.getElementById("modal").showModal();
